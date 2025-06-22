@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <h1>Le Mini Pokédex</h1>
+    <container>
+        <div id="recherche">
+            <label>ID du Pokemon (de 1 à 898):</label>
+            <span id="inputs">
+                <input type="text" name="numPokemon" id="numPokemon">
+                <input type="button" id="chercher" value="Chercher">
+            </span>
+        </div>
+        <div id="containerReponse">
+            <div id="cadreReponse">
+                <h2>#<span id="NumTitreH2"></span> <span id="nomPokemon"></span></h2>
+                <div id="divTxCapture">
+                    <p>Taux de capture : <span id="txCapture"></span>%</p>
+                </div>
+                <p id="famille">Famille : <span id="nomFamille"></span></p>
+                <div id="divDescription">
+                    <p id="description"></p>
+                    <img id="imgPokemon" src="" alt="Image non disponible">
+                </div>
+            </div>
+        </div>
+    </container>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
